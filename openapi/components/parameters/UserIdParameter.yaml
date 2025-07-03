@@ -1,0 +1,7 @@
+# components/parameters/UserIdParameter.yaml
+name: userId
+in: path
+description: The id of the user to retrieve
+required: true
+schema:
+  type: string

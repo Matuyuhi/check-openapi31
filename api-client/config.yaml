@@ -1,0 +1,7 @@
+# https://openapi-generator.tech/docs/generators/kotlin
+additionalProperties:
+  artifactId: api-client
+  packageName: com.matuyuhi.apiclient
+  parcelizeModels: true
+typeMappings:
+  URI: kotlin.String

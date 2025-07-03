@@ -1,0 +1,17 @@
+# paths/userById.yaml
+get:
+  summary: Info for a specific user
+  operationId: showUserById
+  tags:
+    - users
+  parameters:
+    - $ref: '../components/parameters/UserIdParameter.yaml'
+  responses:
+    '200':
+      description: Expected response to a valid request
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/User.yaml'
+    '404':
+      $ref: '../components/responses/NotFound.yaml'

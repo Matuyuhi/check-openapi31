@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  title: OpenAPI 3.1 Splitting Test
+  version: 1.0.0
+  description: A sample API to test OpenAPI 3.1 file splitting features with openapi-generator.
+servers:
+  - url: http://api.example.com/v1
+paths:
+  /users:
+    $ref: './paths/users.yaml'
+  /users/{userId}:
+    $ref: './paths/userById.yaml'
+components:
+  schemas:
+    User:
+      $ref: './components/schemas/User.yaml'
+    Error:
+      $ref: './components/schemas/Error.yaml'
+  parameters:
+    UserId:
+      $ref: './components/parameters/UserIdParameter.yaml'
+  responses:
+    NotFound:
+      $ref: './components/responses/NotFound.yaml'

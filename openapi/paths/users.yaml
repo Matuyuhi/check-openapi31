@@ -1,0 +1,33 @@
+# paths/users.yaml
+get:
+  summary: List all users
+  operationId: listUsers
+  tags:
+    - users
+  responses:
+    '200':
+      description: An array of users
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '../components/schemas/User.yaml'
+post:
+  summary: Create a user
+  operationId: createUser
+  tags:
+    - users
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../components/schemas/User.yaml'
+  responses:
+    '201':
+      description: The user was created successfully
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/User.yaml'
