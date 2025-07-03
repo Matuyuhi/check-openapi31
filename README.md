@@ -4,7 +4,7 @@
 
 ## 概要
 
-このプロジェクトは、[OpenAPI 3.1](https://www.openapis.org/) 仕様に基づいて [OpenAPI Generator](https://openapi-generator.tech/) を利用して生成するテストです。
+このプロジェクトは、[OpenAPI 3.1](https://www.openapis.org/) 仕様に基づいて [OpenAPI Generator 7.14.0](https://openapi-generator.tech/) を利用して生成するテストです。
 
 特に、`$ref` を利用して複数のファイルに分割されたOpenAPI定義が、正しく解決・生成されるかを検証することを目的としています。
 
